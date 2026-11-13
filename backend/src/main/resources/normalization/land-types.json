@@ -1,0 +1,17 @@
+{
+  "version": "norm-1.0",
+  "notes": "Controlled land-type categories. Matching is exact on a lower-cased, whitespace-collapsed label. Unknown labels keep their raw text and get no category (flag LAND_TYPE_UNMAPPED, INFO). Hindi/regional revenue terms are transliterated.",
+  "categories": {
+    "AGRICULTURAL": ["agricultural","agriculture","agri","farm","farmland","cultivable","cultivated","crop land","cropland","krishi","kheti","khet","irrigated","unirrigated","rainfed","dry land","wet land","wetland agricultural","nanja","punja","orchard","bagh","bagicha","plantation","horticulture"],
+    "RESIDENTIAL": ["residential","residence","housing","house","abadi","aabadi","gramthan","gaothan","awasiya","awaasiya","habitation","settlement"],
+    "COMMERCIAL": ["commercial","shop","market","vyavsayik","vyavasayik","office"],
+    "INDUSTRIAL": ["industrial","industry","factory","audyogik","audyogic"],
+    "FOREST": ["forest","van","jungle","forest land","reserved forest","protected forest"],
+    "GOVERNMENT": ["government","govt","govt.","sarkari","nazul","public","state land","crown land","khalsa"],
+    "WATER_BODY": ["water body","waterbody","pond","talab","tank","lake","river","nala","nallah","canal","jal"],
+    "PASTURE": ["pasture","grazing","grazing land","charagah","charnoi","gochar","chara"],
+    "BARREN": ["barren","waste","wasteland","waste land","banjar","usar","unculturable","uncultivable","parti","fallow","padat"],
+    "INSTITUTIONAL": ["institutional","school","hospital","religious","temple","mosque","church","cremation","burial","shamshan","kabristan"],
+    "MIXED": ["mixed","mixed use","mixed-use"]
+  }
+}

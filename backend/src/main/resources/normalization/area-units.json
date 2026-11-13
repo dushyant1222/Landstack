@@ -1,0 +1,35 @@
+{
+  "version": "norm-1.0",
+  "notes": "Universal units convert everywhere. Regional units convert ONLY when the record's state matches an entry below; otherwise the value is kept as supplied and flagged UNIT_NOT_CONVERTIBLE. Regional factors are commonly cited values (bank/real-estate references and state customary measures) and vary within states; verify with the state revenue department before any official use. Edit this file to add or correct factors; bump 'version' when you do.",
+  "universal": [
+    { "code": "SQM",     "label": "square metre",   "sqm": 1,             "aliases": ["sqm","sq m","sq.m","sq. m","sq mt","sq.mt","sqmt","m2","m^2","square metre","square meter","square metres","square meters","sq metre","sq meter","sq. metre","sq. meter","vargmeter","varg meter"] },
+    { "code": "HECTARE", "label": "hectare",        "sqm": 10000,         "aliases": ["ha","hectare","hectares","hect","hec"] },
+    { "code": "ACRE",    "label": "acre",           "sqm": 4046.8564224,  "aliases": ["ac","acre","acres","acr"] },
+    { "code": "SQFT",    "label": "square foot",    "sqm": 0.09290304,    "aliases": ["sqft","sq ft","sq.ft","sq. ft","sq. ft.","ft2","ft^2","square foot","square feet","sq feet","sq foot"] },
+    { "code": "SQYD",    "label": "square yard",    "sqm": 0.83612736,    "aliases": ["sqyd","sq yd","sq.yd","sq. yd","sq yard","sq yards","square yard","square yards","yd2","gaj","gaz"] },
+    { "code": "ARE",     "label": "are",            "sqm": 100,           "aliases": ["are","ares"] },
+    { "code": "CENT",    "label": "cent (1/100 acre)",  "sqm": 40.468564224, "aliases": ["cent","cents","decimal","decimals","dismil","dismal","dhismil"] },
+    { "code": "GUNTHA",  "label": "guntha (1/40 acre)", "sqm": 101.17141056, "aliases": ["guntha","gunta","gunthas","guntas","gutha"] },
+    { "code": "ANKANAM", "label": "ankanam (72 sq ft)", "sqm": 6.68901888,   "aliases": ["ankanam","ankanams"] },
+    { "code": "GROUND",  "label": "ground (2,400 sq ft)", "sqm": 222.967296, "aliases": ["ground","grounds"] }
+  ],
+  "regional": [
+    { "code": "BIGHA",  "aliases": ["bigha","bighas","beegha","bigah"], "byState": {
+        "Assam": 1337.80608, "West Bengal": 1337.80608, "Tripura": 1337.80608,
+        "Bihar": 2528.8207488, "Jharkhand": 2528.8207488,
+        "Uttar Pradesh": 2508.38208, "Gujarat": 1618.7425536, "Madhya Pradesh": 1114.836,
+        "Himachal Pradesh": 809.37128448, "Uttarakhand": 632.11228416,
+        "Punjab": 842.6107, "Haryana": 842.6107 } },
+    { "code": "PUCCA_BIGHA",  "aliases": ["pucca bigha","pakka bigha","pukka bigha"], "byState": { "Rajasthan": 2529.2856, "Uttar Pradesh": 2508.38208 } },
+    { "code": "KACCHA_BIGHA", "aliases": ["kaccha bigha","kachha bigha","kacha bigha","kachcha bigha"], "byState": { "Rajasthan": 1618.7425536 } },
+    { "code": "BISWA",  "aliases": ["biswa","biswas"], "byState": {
+        "Bihar": 126.44103744, "Jharkhand": 126.44103744, "Uttar Pradesh": 125.419104, "Himachal Pradesh": 40.468564224, "Uttarakhand": 31.605614208 } },
+    { "code": "KATHA",  "aliases": ["katha","kattha","kathas","cottah","kottah"], "byState": {
+        "West Bengal": 66.89016, "Tripura": 66.89016, "Assam": 267.56064, "Bihar": 126.4642632, "Jharkhand": 126.4642632 } },
+    { "code": "DHUR",   "aliases": ["dhur","dhoor","dhurs"], "byState": { "Bihar": 6.32321316, "Jharkhand": 6.32321316 } },
+    { "code": "KANAL",  "aliases": ["kanal","kanals"], "byState": {
+        "Punjab": 505.857, "Haryana": 505.857, "Chandigarh": 505.857, "Jammu and Kashmir": 505.857, "Himachal Pradesh": 505.857 } },
+    { "code": "MARLA",  "aliases": ["marla","marlas"], "byState": {
+        "Punjab": 25.29285, "Haryana": 25.29285, "Chandigarh": 25.29285, "Jammu and Kashmir": 25.29285, "Himachal Pradesh": 25.29285 } }
+  ]
+}

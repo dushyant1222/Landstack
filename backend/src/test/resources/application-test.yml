@@ -1,0 +1,22 @@
+landstack:
+  storage:
+    dir: ${java.io.tmpdir}/landstack-test-storage
+  upload:
+    max-bytes: 2097152
+  parsing:
+    max-rows: 500
+  processing:
+    enabled: false
+    token: ""
+  security:
+    login-max-attempts: 5
+  seed:
+    demo-users: false
+spring:
+  servlet:
+    multipart:
+      max-file-size: 3MB
+      max-request-size: 3MB
+logging:
+  level:
+    edu.iitp.landstack: INFO

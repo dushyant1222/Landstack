@@ -1,0 +1,25 @@
+#!/bin/sh
+# Minimal Maven Wrapper (only-script mode): downloads the Maven distribution named in
+# .mvn/wrapper/maven-wrapper.properties into ~/.m2/wrapper/dists on first use, then runs it.
+set -e
+BASE_DIR=$(cd "$(dirname "$0")" && pwd)
+PROPS="$BASE_DIR/.mvn/wrapper/maven-wrapper.properties"
+DIST_URL=$(sed -n 's/^distributionUrl=//p' "$PROPS" | tr -d '\r')
+[ -n "$DIST_URL" ] || { echo "distributionUrl missing in $PROPS" >&2; exit 1; }
+DIST_NAME=$(basename "$DIST_URL" .zip)
+MAVEN_VERSION_DIR=$(echo "$DIST_NAME" | sed 's/-bin$//')
+DIST_HOME="${MAVEN_USER_HOME:-$HOME/.m2}/wrapper/dists/$DIST_NAME"
+MVN_HOME="$DIST_HOME/$MAVEN_VERSION_DIR"
+if [ ! -x "$MVN_HOME/bin/mvn" ]; then
+  mkdir -p "$DIST_HOME"
+  TMP_ZIP="$DIST_HOME/$DIST_NAME.zip.part"
+  echo "Downloading $DIST_URL" >&2
+  if command -v curl >/dev/null 2>&1; then curl -fsSL -o "$TMP_ZIP" "$DIST_URL"
+  elif command -v wget >/dev/null 2>&1; then wget -q -O "$TMP_ZIP" "$DIST_URL"
+  else echo "curl or wget is required to download Maven" >&2; exit 1; fi
+  if command -v unzip >/dev/null 2>&1; then unzip -q -o "$TMP_ZIP" -d "$DIST_HOME"
+  else (cd "$DIST_HOME" && jar xf "$TMP_ZIP"); chmod +x "$MVN_HOME/bin/mvn"; fi
+  rm -f "$TMP_ZIP"
+fi
+export MAVEN_PROJECTBASEDIR="$BASE_DIR"
+exec "$MVN_HOME/bin/mvn" "$@"

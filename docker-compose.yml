@@ -1,0 +1,76 @@
+# LandStack local demonstration stack.
+#   cp .env.example .env   # then fill in the secrets
+#   docker compose up --build
+# Open http://localhost:8088  (frontend + /api proxy). Data persists in named volumes.
+name: landstack
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: landstack
+      POSTGRES_USER: landstack
+      POSTGRES_PASSWORD: ${LANDSTACK_DB_PASSWORD:?set LANDSTACK_DB_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U landstack -d landstack"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  processing:
+    build: ./processing-service
+    environment:
+      PROCESSING_TOKEN: ${LANDSTACK_PROCESSING_TOKEN:?set LANDSTACK_PROCESSING_TOKEN in .env}
+      PROCESSING_MAX_PAGES: "50"
+      PROCESSING_TIMEOUT_SECONDS: "60"
+    expose:
+      - "8090"
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: ${LANDSTACK_PROFILE:-dev}
+      LANDSTACK_DB_URL: jdbc:postgresql://postgres:5432/landstack
+      LANDSTACK_DB_USER: landstack
+      LANDSTACK_DB_PASSWORD: ${LANDSTACK_DB_PASSWORD}
+      LANDSTACK_STORAGE_DIR: /data/uploads
+      LANDSTACK_PROCESSING_URL: http://processing:8090
+      LANDSTACK_PROCESSING_TOKEN: ${LANDSTACK_PROCESSING_TOKEN}
+      LANDSTACK_CORS_ORIGINS: http://localhost:8088,http://localhost:5173
+      LANDSTACK_DEMO_PASSWORD: ${LANDSTACK_DEMO_PASSWORD:-}
+      LANDSTACK_BOOTSTRAP_ADMIN_EMAIL: ${LANDSTACK_BOOTSTRAP_ADMIN_EMAIL:-}
+      LANDSTACK_BOOTSTRAP_ADMIN_PASSWORD: ${LANDSTACK_BOOTSTRAP_ADMIN_PASSWORD:-}
+      LANDSTACK_IP_HASH_SALT: ${LANDSTACK_IP_HASH_SALT:-change-me}
+      LANDSTACK_COOKIE_SECURE: ${LANDSTACK_COOKIE_SECURE:-false}
+    volumes:
+      - uploads:/data/uploads
+    ports:
+      - "127.0.0.1:8080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8080/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8088:8080"
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  uploads:

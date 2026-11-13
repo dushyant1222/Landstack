@@ -1,0 +1,39 @@
+ULPIN,Khasra No,Owner Name,Area,Unit,Land Type,Village,Tehsil,District,State,Registration No,Registration Date,Latitude,Longitude
+BR220000000001,0054,Amit Kumar,3.69,acre,Banjar,Rampur,Danapur,Patna,Bihar,REG/2016/1001,28-01-2020,24.625545,84.769811
+BR200000000002,0701,Rakesh Singh,1.222,hectare,Abadi,Sitapur,Hilsa,Nalanda,Bihar,REG/2017/1002,28-07-2014,25.640807,85.49257
+BR100000000003,0001,Arjun Jha,13,katha,Abadi,Chandpur,Bodh Gaya,Gaya,Bihar,REG/2018/1003,28-06-2012,25.03926,84.66491
+,,Rahul Prasad,1.12,acre,Orchard,Sitapur,Rajgir,Nalanda,Bihar,REG/2019/1004,13-12-2019,24.906145,85.013154
+BR140000000005,0773,Rekha Prasad,5897,sq ft,Talab,Madhopur,Rajgir,Nalanda,Bihar,REG/2020/1005,22-01-2021,25.504715,85.693531
+BR170000000006,0794,Arjun Singh,-2.5,hectare,Commercial,Bhagwanpur,Rajgir,Nalanda,Bihar,REG/2021/1006,19-02-2015,24.899546,85.88878
+BR100000000007,0910,Neha Kumar,2.76,bigha,Residential,Madhopur,Hilsa,Nalanda,Bihar,REG/2022/1007,28-05-2013,24.896662,85.719452
+BR270000000008,0104,Meena Mahto,2.67,bigha,Banjar,Shivpur,Hilsa,Nalanda,Bihar,REG/2023/1008,16-03-2019,95.12,85.505993
+BR180000000009,0192,Deepak Kumar,0.82,bigha,Orchard,Chandpur,Danapur,Patna,Bihar,REG/2015/1009,13-09-2011,25.60445,85.523225
+BR280000000010,0136,Priya Paswan,2585,sq ft,Banjar,Chandpur,Danapur,Patna,Bihar,REG/2016/1010,22-09-2017,,
+BR120000000011,0988,Rahul Mahto,14,katha,Residential,Madhopur,Phulwari,Patna,Bihar,REG/2017/1011,13-11-2011,25.581416,85.79139
+BR210000000012,0178,Ravi Sharma,14,dhur,Banjar,Chandpur,Hilsa,Nalanda,Bihar,REG/2018/1012,26-06-2013,24.695346,
+BR150000000013,0821,Pooja Jha,3,katha,Krishi,Sitapur,Rajgir,Nalanda,Bihar,REG/2019/1013,19-06-2017,25.947795,85.162444
+BR370000000014,0575,Kavita Jha,12,,Krishi,Bhagwanpur,Bodh Gaya,Gaya,Bihar,REG/2020/1014,22-11-2022,24.828559,85.849747
+BR320000000015,0556,Geeta Yadav,1.108,hectare,Residential,Madhopur,Danapur,Patna,Bihar,REG/2021/1015,18-06-2015,25.197901,84.787867
+BR100000000016,0543,Amit Kumar,15,dhur,Agricultural,Lakhanpur,Bodh Gaya,Gaya,Bihar,REG/2022/1016,04/05/2019,25.920575,84.764285
+BR170000000017,0201,Sanjay Jha,11,katha,Agricultural,Rampur,Bodh Gaya,Gaya,Bihar,REG/2023/1017,24-08-2014,25.572512,84.990978
+BR240000000018,0641,N/A,2008,sq ft,-,Shivpur,Hilsa,Nalanda,Bihar,REG/2015/1018,22-01-2022,25.841883,85.876999
+BR380000000019,0925,Geeta Kumar,4.8,bigha,Orchard,Madhopur,Sherghati,Gaya,Bihar,REG/2016/1019,24-08-2022,25.793253,85.08253
+BR150000000020,0436,"=HYPERLINK(""http://example.invalid"",""click"")",0.77,acre,Banjar,Rampur,Phulwari,Patna,Bihar,REG/2017/1020,28-10-2014,25.887135,85.284845
+BR280000000021,0292,Suresh Mishra,1.3,bigha,Commercial,Chandpur,Bodh Gaya,Gaya,Bihar,REG/2018/1021,18-06-2021,24.990869,84.89178
+BR310000000022,0657,Rahul Verma,12 acres,,Residential,Rampur,Masaurhi,Patna,Bihar,REG/2019/1022,16-08-2018,25.906344,84.609237
+BR260000000023,0629,Anita Prasad,1373,sq ft,Krishi,Rampur,Sherghati,Gaya,Bihar,REG/2020/1023,14-12-2014,25.712526,84.787088
+BR220000000024,0390,Pooja Devi,11,kanal,Agricultural,Shivpur,Rajgir,Nalanda,Bihar,REG/2021/1024,23-07-2018,24.686716,85.145506
+BR290000000025,0697,Sunita Prasad,15,katha,Commercial,Lakhanpur,Danapur,Patna,Bihar,REG/2022/1025,19-01-2024,25.165005,84.809832
+BR110000000026,0266,Deepak Mahto,250000,hectare,Talab,Bhagwanpur,Sherghati,Gaya,Bihar,REG/2023/1026,16-07-2020,25.83724,85.099553
+BR220000000027,0829,Rahul Devi,2693,sq ft,Commercial,Sitapur,Bodh Gaya,Gaya,Bihar,REG/2015/1027,22-10-2024,25.415233,85.573971
+BR280000000028,0052,Rakesh Jha,1.22,hectare,Krishi,Bhagwanpur,Bodh Gaya,Gaya,Bihar,REG/2016/1028,27-04-2018,25.186858,84.726121
+BR320000000029,0039,Sanjay Sharma,0.81,bigha,Krishi,Kishanpur,Sherghati,Gaya,Bihar,REG/2017/1029,15-04-2023,25.053702,85.403606
+BR150000000030,0874,Rekha Mishra,0.55,bigha,Talab,Lakhanpur,Rajgir,Nalanda,Bihar,REG/2018/1030,22-02-2017,25.054411,85.277411
+BR260000000031,0214,Vikram Mahto,2.81,bigha,Talab,Lakhanpur,Phulwari,Patna,Bihar,REG/2019/1031,16-12-2011,25.818179,84.723325
+BR360000000032,0216,Priya Verma,6,dhur,Krishi,Lakhanpur,Sherghati,Gaya,Bihar,REG/2020/1032,23-01-2012,24.730018,85.482622
+BR150000000033,0539,Sunita Paswan,16,katha,Banjar,Rampur,Danapur,Patna,Bihar,REG/2021/1033,26-03-2011,25.6105,85.860486
+BR210000000034,0650,Rakesh Jha,1.399,hectare,Residential,Madhopur,Hilsa,Nalanda,Bihar,REG/2022/1034,22-03-2011,25.25537,85.036046
+BR120000000035,0472,Geeta Mishra,12,dhur,Banjar,Rampur,Rajgir,Nalanda,Bihar,REG/2023/1035,15-03-2012,25.062885,85.304975
+BR160000000036,0388,Manoj Devi,1.067,hectare,Commercial,Shivpur,Masaurhi,Patna,Bihar,REG/2015/1036,25-01-2010,25.720395,84.956409
+BR100000000003,0001,Arjun Jha,13,katha,Abadi,Chandpur,Bodh Gaya,Gaya,Bihar,REG/2018/1003,28-06-2012,25.03926,84.66491
+BR220000000001,0054,Amit Kumar,11.07,acre,Banjar,Rampur,Danapur,Patna,Bihar,REG/2016/1001,28-01-2020,24.625545,84.769811

@@ -1,0 +1,23 @@
+# secrets
+.env
+*.env.local
+# build outputs
+backend/target/
+frontend/node_modules/
+frontend/dist/
+processing-service/.venv/
+__pycache__/
+*.pyc
+# runtime data (never commit uploads)
+storage/
+uploads/
+*.log
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store
+frontend/playwright-report/
+frontend/test-results/
+backend/storage/
+docs/ml-evaluation-results.md.bak

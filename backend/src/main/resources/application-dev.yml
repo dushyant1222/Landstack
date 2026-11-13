@@ -1,0 +1,16 @@
+# Local development profile. Enables Swagger UI and demo-account seeding.
+landstack:
+  storage:
+    dir: ${LANDSTACK_STORAGE_DIR:./storage}
+  seed:
+    demo-users: true
+  security:
+    public-api-docs: true
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+logging:
+  level:
+    edu.iitp.landstack: DEBUG

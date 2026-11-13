@@ -1,0 +1,16 @@
+{
+  "version": "norm-1.0",
+  "notes": "Canonical Indian state/UT names, used only to look up regional area factors. The stored 'state' value is never rewritten.",
+  "states": {
+    "Andhra Pradesh": ["ap","andhra"], "Arunachal Pradesh": ["arunachal"], "Assam": ["as"], "Bihar": ["br"],
+    "Chhattisgarh": ["cg","chattisgarh","chhatisgarh"], "Goa": ["ga"], "Gujarat": ["gj","gujrat"], "Haryana": ["hr"],
+    "Himachal Pradesh": ["hp","himachal"], "Jharkhand": ["jh"], "Karnataka": ["ka"], "Kerala": ["kl"],
+    "Madhya Pradesh": ["mp"], "Maharashtra": ["mh"], "Manipur": ["mn"], "Meghalaya": ["ml"], "Mizoram": ["mz"],
+    "Nagaland": ["nl"], "Odisha": ["od","orissa","or"], "Punjab": ["pb"], "Rajasthan": ["rj"], "Sikkim": ["sk"],
+    "Tamil Nadu": ["tn","tamilnadu"], "Telangana": ["ts","tg"], "Tripura": ["tr"], "Uttar Pradesh": ["up"],
+    "Uttarakhand": ["uk","ua","uttaranchal"], "West Bengal": ["wb","w.b.","w b","bengal"],
+    "Andaman and Nicobar Islands": ["an","andaman and nicobar","andaman & nicobar islands"], "Chandigarh": ["ch"],
+    "Dadra and Nagar Haveli and Daman and Diu": ["dnhdd","dadra and nagar haveli","daman and diu"], "Delhi": ["dl","nct of delhi","new delhi"],
+    "Jammu and Kashmir": ["jk","j&k","jammu & kashmir"], "Ladakh": ["la"], "Lakshadweep": ["ld"], "Puducherry": ["py","pondicherry"]
+  }
+}
